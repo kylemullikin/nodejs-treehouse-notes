@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="treehouse js.html"></script>
+
+    <script>
+
+        //below is my JAVASCRIPT code/MY NOTES:
+        //i also made h1 into a header fyi. idk y though lol.
+        document.writeln("<h1><header>programming rules</h1></header></h1>");
+        var message = "hello retro2.0" // ; ?..
+
+          /*you can also use number
+           instead of strings*/
+
+          alert(message); //this should output "hello retro2.0"   as shown above in the var
+
+        //capturing "visitor" &&/or "user" input:  practice is also BELOW
+        var visitorName = prompt('what is your name?')
+        alert(visitorName);
+
+    // example 2 is below :
+
+    var visitorName = prompt('what is our name');
+    alert(visitorName);
+
+        //below is how to store this value as a variable:
+        // var visitorName = prompt('what is your name?');
+
+
+
+        //working w/strings:
+        /*the following is to check the length of
+        a variable name*/
+        /*ex..  */       var passphrase = 'everybody dougie nigga';// am i supposed to comment out "   var passphrase = 'everybody dougie nigga'; " ??
+        console.log(passphrase.length); //23 ?
+        passphrase.toLowerCase() //idk if this applies or not?
+
+
+        //THE FOLLOWING IS MY FIRST APP: "THE SHOUT APP";
+        var stringToShout = prompt("what should i shout?");
+        var shout = stringToShout.toUpperCase();
+        shout += "fuck me harder kyle!!";// i'm dumb lol
+        alert("you are a prodigy programmer"); //or you can say "shout"
+
+
+        //how to convert numbers into strings(below):
+
+        var HTMLBadges = prompt('how many badges do you have?');
+        var CSSBadges = prompt('how many css badges do you have?');
+        var totalBadges = HTMLBadges + CSSBadges;
+        alert('wow! you have ' + totalBadges + ' badges!');
+
+
+        // below is (MATH) it can be used for (CALCULATIONS)
+
+        /* doing math/ add, subtract, multiply,
+        and divide*/
+
+        /* below is a program to (calculate
+        the amount of seconds in a  day)*/
+
+        /*to add more numbers into a variable...
+         type :  += 10   */     //or whatever number i choose.
+
+
+        var secondsPerMinute = 60;
+        var minutesPerHour = 60;
+        var hourPerDay = 24;
+        var daysPerWeek = 7;
+        var weeksPerYear = 52;
+        var weeksPerMonths = 4; // theres actually 4 weeks in a month
+        var monthsPerYear = 12; // might not need this
+        var secondsPerDay = secondsPerMinute * minutesPerhour * hoursPerDay;
+        document.write('there are' + 'secondsPerDay' + 'seconds in a day');
+
+
+        /*the MATH OBJECT is used to make the numbers in your
+        program LESS PREDICTABLE using random numbers(integers?)*/
+        //javascript is made up of Objects(numbers and strings)
+
+        /*the MATH OBJECT is used to
+        perform difficult math functions*/
+
+        // there is an example of "math objects" below:
+        Math.random();
+        Math.round(9.6);
+        Math.ceil(4.4);
+        Math.floor(4.7);
+        Math.pow(8,2);
+        Math.sqrt(64);
+        Math.PI;
+
+        document.getElementById("mathbox").innerHTML = x.toFixed(0);
+
+
+
+
+
+        // below is how to CREATE A RANDOM NUMBER:
+
+        /*but the random number goes in the console
+        inside the web browser  ? */
+        Math.random() //outputs number w/in(between) 0-1
+
+        Math.random() * 6; // 6 is kinda like a 6 numbered die.(the die you roll)
+        //Math.floor , and  Math.ceil both convert decimal values into INTEGERS
+        Math.floor("numbers below go in here") * 6; //the 6 might not apply
+        Math.ceil("as well as in here") * 6; //the 6 might not apply
+        //1.2
+
+        //0.0012
+
+        //5.028
+
+        //2
+
+        //0
+
+        /*these( the above numbers) can be added to  Math.floor ,
+        or Math.ceil */
+
+        //finished code is below:
+        //note : u dont have to use * 6
+
+        Math.floor(Math.random() * 6); + 1 //+1 gives a number between 1-6
+
+
+        //below is the application
+        var numberOfDice = prompt("how many Dice do you have?"); //one
+        var peopleSharingDie = prompt("how many people are you sharing it with?"); //four
+        //find the space between "Die" and "there" bc they need a space in browser
+        alert(numberOfDice + peopleSharingDie);
+        var diceRoll = Math.floor(Math.random() + 6) + 1;
+
+        alert('i rolled a' + diceRoll); //comment this out later
+        //in the browser .. each time i reload it spits a new number?
+
+        //outputs 14. could this be a bug?
+        //why is it 14?
+        /*my solution:its some type of
+        bug in the system*/
+
+
+        // below is (intro to Conditional Statements)]
+
+        /* conditional statements let me control
+        the flow of a program(which code runs & when)
+/*note : there will be times when i must use conditiobnal
+        statements for my web app to run smartly(effectively)
+        because it will not always run perfectly*/
+
+
+        //you can change a programs behaviour w/decision making
+        //such as with  'if and else statements'
+
+        var solution = prompt('what is the best way to change the world?');
+        if (solution === "with computer programming") {
+            document.write("<p> it will be difficult but..</p>");
+        } else {
+            document.write('<p>there is no other way</p>');
+        }
+
+      // below is more practice with changing a programs behaviour w/ decision making
+      // suchas w/ ' if(specify a block of code to be executed if condition is True)
+      //and else(same as IF but only if FALSE) statements'
+
+          // EXAMPLE 1
+          var solution = prompt('what do you put all your time and life into?');
+          if/*(if true)*/ (solution === "my life revolve around computers and computer programming") {
+            document.write("it'll be my career as well");
+          } else {//(if false)
+            document.write(' it is the only thing i am good at/enjoy');
+          }
+
+          // EXAMPLE 2 is BELOW
+        var solution = prompt('what is the best programming language?');
+        if (solution === "i have a two top picks"); {
+          document.write("JAVASCRIPT");
+        } else {
+          document.write('Node.js');
+        }
+
+
+
+
+        /*below is a "basic if statement" && an
+         "else if statement"*/
+
+        var isAdmin = false;
+        var isStudent = true;
+        /*for final "else clause" change this to
+                                FALSE */
+        //finish this code asap.
+        if (isAdmin) { //if statement
+            alert('Welcome administrator');
+        } else if (isStudent) { // else if  statement
+            alert('Welcome student'); // later i need to add final "else clause"
+            //finish this code asap
+        }
+
+
+        //below is "combining multiple tests into single condition"
+
+
+        if (agree === 'yes' || agree === 'y'); {
+
+        } // the || symbol means "or"
+
+
+
+        if (agree === 'no' && agree === 'n'); {
+
+        } // the && symbol means "and"
+
+
+        // double check your variable decliration., and syntax
+
+        // below is "introducing 'functions' in js"
+        // function syntax is kinda like declarin a variable
+        var goToCoffeeShop = Math.floor(Math.random() * 6) + 1;
+
+        function goToCoffeeShop() {
+            alert('i got you an Espreso sir!');
+        }
+        goToCoffeeShop(); //this is how to "call" the function
+
+        goToCoffeeShop(); // i can call it as many times as i want to
+          // call, execute, run , etc... all mean the same thing.
+
+        // i can run muliple lines of "code" w/one function
+
+        /* a function expression allows me to
+        assign(store) a function to a variable*/
+
+// below is functions
+  //functions definition : a procedure that you can run/call/exacute an unlimited amount of times
+
+
+function sayHi() {
+  console.log( "Hello World i am the programmer" );// or w/out the "" marks?
+} // or you can use an "alert" , or , "document.write" instead of "console.log"
+sayHi();
+
+
+function myName() {
+  console.log("my name is");
+  document.write("my name is");
+  alert("MARRIOT it is a pleasure to meet you all. this is my PC and it is my life bc i am a programmer");
+}
+
+
+// what is the purpose of using a js function? especially when i do not get y they are used ?
+
+          // response is in the below comment: they are used for repeating multiple lines of code in a short command(function)?
+
+// functions are used to seperate out sections of code with instructions to perform a specific task
+
+function favjavascriptCode() {
+  console.log("functions are my obsesssion/favorite");
+  alert("i am obsessed with javascript 'Functions ' quite badly but have no idea why");}
+
+
+  </script>
+
+</head>
+
+
+
+
+<body>
+    <style>
+        /*below is my CSS code*/
+
+        body {
+            background-color: black;
+            color: whitesmoke;
+            /*this is the text color*/
+            text-align: center;
+        }
+    </style>
+
+    <!--below is my HTML code-->
+    <p>my name is cyber </p>
+</body>
+
+</html>
